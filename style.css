@@ -1,0 +1,364 @@
+/*Fonts*/
+.cc {
+        font-family: "Cascadia Code"; /*Cascadia Code*/
+      }
+.gmnd{
+  font-family: Garamond, Georgia, serif; /*Garamond*/
+}
+.mntsrrt{
+  font-family: 'Montserrat', sans-serif; /*Montserrat*/
+}
+.qcksnd{
+  font-family: 'Quicksand', sans-serif; /*Quicksand*/
+}
+.dosis{
+  font-family: 'Dosis' , sans-serif; /*Dosis*/
+}
+.raleway{
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Text Customization*/
+/*Text Colors*/
+.black-text {
+  color: #000000;
+}
+.white-text{
+  color: white;
+}
+/*Text Size*/
+.one-rem{
+  font-size: 1rem;
+}
+.two-rem{
+  font-size: 2rem;
+  }
+.three-rem{
+  font-size: 3rem;
+}
+.size-200{
+  font-size: 200%;
+}
+
+
+/* Background Customization */
+.grey-background{
+  background-color: #6d686820;
+}
+.navy-background{
+  background-color: #151532;
+}
+.blue-background{
+  background-color: lightblue;
+}
+.darkgrey-background{
+  background-color: #B6BBC4;
+}
+
+/* Border Customization */
+/* Border Size */
+.b-1{
+  border: 1px solid;
+}
+.b-2{
+  border: 2px solid;
+}
+/* Border Color */
+.black-border{
+  border-color: #292929;
+}
+.grey-border{
+  border-color: #6d6d6d50;
+}
+.hr-bold{
+  border: 2px solid;
+  border-color:rgb(0, 0, 0);
+  font-weight: bold;
+  color:rgb(0, 0, 0);
+}
+
+/* Size Customization */
+/*height*/
+.h-1{
+  height: 10%;
+}
+.h-2{
+  height: 20%;
+}
+.h-3{
+  height: 30%;
+}
+.h-4{
+  height: 40%;
+}
+/*width*/
+.w-1{
+  width: 10%;
+}
+.w-2{
+  width: 20%;
+}
+.w-3{
+  width: 30%;
+}
+.w-4{
+  width: 40%;
+}
+
+/* Item Specific Customization */
+#hr-line{
+  color: #00000090;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+#contact-email-font-size{
+  font-size: 110%;
+}
+
+/*Alignment Customization*/
+.left-text-align{
+  text-align: left;
+}
+.indented-paragraph{
+  text-indent: 20px;
+  white-space: pre-line;
+}
+
+div div ul {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Width and Height Customization*/
+.height60vph{
+  height: 45vh;
+}
+.one-hund-px{
+  width: 100px;
+  height: 100px;
+}
+
+/* .animation{
+  background-color: black;
+  animation-name: test;
+  animation-duration: 5s;
+}
+
+@keyframes test {
+  from {background-color: blue;}
+  to {background-color: yellow;}
+} */
+
+/* Homepage spinning squares animation */
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+}
+
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+.area{
+    background: #151532;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    height:60vh;  
+    margin: 0;
+    padding: 0;
+}
+
+.center{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/*Circles*/
+.circles{
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    height: 65%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+/*Triangles*/
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #B6BBC435; /* Change color as needed */
+}
+
+.tri-container {
+  float: right;
+  margin-top: 50px;
+  padding-bottom: -50px;
+}
+
+/*Arrow Bullet Point*/
+.arrow-bullet {
+  list-style: none;
+  padding-left: 20px; /* Adjust this value based on your preference */
+}
+.arrow-bullet:before {
+  content: "➤"; /* You can replace this with any arrow or character you prefer */
+  color: #000; /* Customize the color of the arrow */
+  display: inline-block;
+  width: 1.5em; /* Adjust the width of the arrow */
+  margin-left: -1em; /* Adjust the space between the bullet and the text */
+}
+.circle-bullet {
+  list-style: none;
+  padding-left: 20px;
+}
+.circle-bullet:before {
+  content: "⚫";
+  color: black;
+  display: inline-block;
+  width: 2em;
+  margin-left: -1em;
+}
+
+/* Styles for the container */
+#container {
+  position: absolute;
+  border: 2px solid #ccc;
+  overflow: hidden; /* Ensure button stays within the container */
+}
+
+/* Styles for the button */
+button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50px; /* Initial top position */
+  left: 50px; /* Initial left position */
+  transition: top 0.2s ease; /* Adding transition for smooth movement */
+}
+
+

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pointers</title>
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+          crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="../../style.css" />
+      </head>
+<body>
+    <!-- Header -->
+    <div class="container py-1">
+        <header
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-0"
+        >
+          <div class="col-md-3 mb-2 mb-md-0">
+            <a
+              href="../../index.html"
+              class="d-inline-flex link-body-emphasis text-decoration-none"
+            >
+              <img
+                src="../../assets/images/Pri-Programming Images/PPLogo4.png"
+                alt="Pri-Programming Logo"
+                width="90%"
+              />
+            </a>
+          </div>
+  
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li>
+              <a href="../../index.html" class="nav-link px-2 link-secondary cc"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="../../about.html" class="nav-link px-2 black-text cc">About</a>
+            </li>
+            <li>
+              <a href="../../courses.html" class="nav-link px-2 black-text cc"
+                >Courses</a
+              >
+            </li>
+            <li>
+              <a href="../../games.html" class="nav-link px-2 black-text cc">Games</a>
+            </li>
+            <li>
+              <a href="../../blog.html" class="nav-link px-2 black-text cc">Blog</a>
+            </li>
+          </ul>
+  
+          <div class="col-md-3 text-end">
+            <!-- <button
+              type="button"
+              class="btn btn-outline-primary me-2 black-text grey-border cc"
+            >
+              Login
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary black-text grey-border grey-background cc"
+            >
+              Sign-up
+            </button> -->
+          </div>
+        </header>
+      </div>
+      <hr id="hr-line"/>
+  
+<!--Row holding Sidebar & ALL page items-->
+<div class="row flex-nowrap">
+  <!--Sidebar Column-->
+  <!--<div class="col-4">--> 
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width:
+    280px;">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto
+    text-white text-decoration-none">
+      <svg class="bi pe-none me-2" width="40" height="32"><use
+      xlink:href="#bootstrap"></use></svg>
+      <span class="fs-4">Sidebar</span>
+    </a>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a href="#" class="nav-link active" aria-current="page">
+          <svg class="bi pe-none me-2" width="16" height="16"><use
+          xlink:href="#home"></use></svg>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-white">
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+          Dashboard
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-white">
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+          Orders
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-white">
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+          Products
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-white">
+          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+          Customers
+        </a>
+      </li>
+    </ul>
+    <hr>
+    <div class="dropdown">
+      <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+        <strong>mdo</strong>
+      </a>
+      <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+        <li><a class="dropdown-item" href="#">New project...</a></li>
+        <li><a class="dropdown-item" href="#">Settings</a></li>
+        <li><a class="dropdown-item" href="#">Profile</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Sign out</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--</div>-->
+
+
+<!--All Main items Column-->
+  <div class="">
+    <!--Title Bar-->
+    <div class="mt-5 cc">
+      <div class="mx-0 px-0 py-5 grey-background "> <!--Took this out: (bg-body-tertiary)-->
+        <div class="container py-5 black-text">
+          <h1 class="">Pointers</h1> <!--Took this out: (text-body-emphasis)-->
+          <p class="col-lg-8 lead"> <!--Took this out: (mx-auto) -->
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Main Jumbotron from ENC Project-->
+    <div class="">
+     <div class="container mx-5 px-0 py-5 h-100 d-flex flex-column">
+      <div class="row flex-grow-1 align-items-center">
+       <div class="col-12 py-5 flex-grow-1 black-text">
+        <h2 class="display-5 fw-bold text-body-emphasis cc mb-3">What is a Pointer?</h2>
+        <p class="lead mb-5 cc">
+         Pointers are arguments that "point" to the address of specific variables.
+        </p>
+        <p class="lead mb-5 cc">
+         Doesn't this sound a lot like reference variables? Yes!
+        </p>
+        <p class="lead mb-5 cc">
+         While pointers and reference variables both hold addresses of variables,
+         there are some key differences to each:
+        </p>
+      <!--Pointers & References Chart-->
+      <div class="container">
+      <!--Title Row-->
+      <div class="row">
+          <div class="column col-6 my-4">
+              <h3 class="cc text-center">Pointers</h3>
+          </div>
+          <div class="column col-6 my-4">
+              <h3 class="cc text-center">References</h3>
+          </div>
+          <hr id="hr-line"/>
+      </div>
+      <!--Bullet Point Row-->
+      <div class="row">
+          <!--Pointers Column-->
+          <div class="column col-6 my-2">
+              <p class="cc circle-bullet">Address it holds can change.</p>
+              <p class="cc circle-bullet">Can be assigned the NULL variable 
+                            (a variable that represents 
+                            nothing).</p>
+              <p class="cc circle-bullet">To access value at the address, 
+                            must “dereference” the pointer 
+                            (Essentially add a star before the 
+                            name of the pointer).</p>
+          </div>
+          <!--References Column-->
+          <div class="column col-6 my-2">
+              <p class="cc circle-bullet">Address it holds is ONLY what it
+                                          references (for example, a reference
+                                          variable called &item can ONLY hold 
+                                          the address of the variable item).</p>
+              <p class="cc circle-bullet">CANNOT be assigned the NULL variable, 
+                                          must contain an address.</p>
+              <p class="cc circle-bullet">No need to explicitly dereference, 
+                                          just state the name of  the variable 
+                                          without the ampersand (&).</p>
+          </div>
+      </div>
+      <!--Similarities Title Row-->
+      <div class="row">
+          <div class="column col-12 my-4">
+              <h3 class="cc text-center mt-2">
+                  Pointers AND References
+              </h3>
+          </div>
+          <hr id="hr-line"/>
+      </div>
+      <!--Similarities Bullet Point Row-->
+      <div class="row">
+          <div class="column">
+              <p class="cc circle-bullet">
+                  Can be passed through functions as arguments. 
+              </p>
+              <p class="cc circle-bullet">
+                  Can hold the address of arrays. 
+              </p>
+          </div>
+      </div>
+    </div>
+
+    <!--Pointers & Arrays Container-->
+    <div class="container">
+      <!--Title Row-->
+      <div class="row my-5">
+          <div class="cc column col-12">
+              <h2 class="fw-bold display-6 mb-3 mt-5">Pointers & Arrays</h2>
+              <p class="lead mb-5">
+                  Pointers can also point to arrays!
+              </p>
+              <p class="lead mb-5">
+                  For a pointer pointing to an array, the default value it
+                  holds is the address of the first array element:
+              </p>
+              <p class="lead fw-bold">
+                Here's an example:
+              </p>
+              <hr class="col-4">
+              <!--Pointer to Array Example-->
+              <div class="row mt-5 pt-5">
+                <!--Boxes-->
+                <div class="col-2 py-4 grey-background text-center">ptr</div>
+                <div class="mx-2 py-1 col-1">
+                  <p class="flex-lg-row"></p>
+                  <p class="flex-lg-row my-0 text-center">--></p>
+                  <p class="flex-lg-row"></p>
+                </div>
+                <div class="mx-1 py-4 col-2 grey-background text-center">red</div>
+                <div class="mx-1 py-4 col-2 grey-background text-center">blue</div>
+                <div class="mx-1 py-4 col-2 grey-background text-center">green</div>
+                <div class="mx-1 py-4 col-2 grey-background text-center">yellow</div>
+                <p class="mt-4 px-0 col-12">ptr = &colors = &red = address of red.</p>
+                <p class="px-0 col-12">*ptr = colors = red = value of red.</p>
+              </div>
+
+              <!--Pointer to Array Elements Example-->
+              <!--hr row-->
+              <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                  <hr class="my-0 hr-bold">
+                </div>
+                <div class="col-1"></div>
+              </div>
+              <!--Arrows-->
+              <div class="row">
+                <div class="mx-1 col-2 row text-center">
+                  <div class="col-4"></div>
+                  <div class="col-4 size-200">↑</div>
+                  <div class="col-4"></div>
+                </div>
+                <div class="mx-1 col-1"></div>
+                <div class="mx-1 col-2 size-200 text-center">⇣</div>
+                <div class="mx-1 col-2 size-200 text-center">⇣</div>
+                <div class="mx-1 col-2 size-200 text-center">⇣</div>
+                <div class="mx-1 col-2 size-200 text-center">⇣</div>
+              </div>
+              <div class="row">
+                <!--Boxes-->
+                <div class="col-2 py-4 grey-background text-center">ptr</div>
+                <div class="mx-2 py-1 col-1">
+                  <p class="flex-lg-row"></p>
+                  <p class="flex-lg-row my-0 text-center"></p>
+                  <p class="flex-lg-row"></p>
+                </div>
+                <div class="mx-1 py-4 col-2 grey-background text-center">red</div>
+                <div class="mx-1 py-4 col-2 grey-background text-center">blue</div>
+                <div class="mx-1 py-4 col-2 grey-background text-center">green</div>
+                <div class="mx-1 py-4 col-2 grey-background text-center">yellow</div>
+                <p class="mt-4 px-0 col-12">ptr[0] = red.</p>
+                <p class="px-0 col-12">ptr[1] = blue.</p>
+                <p class="px-0 col-12">ptr[2] = green.</p>
+                <p class="px-0 col-12">ptr[3] = yellow.</p>
+                <p class="px-0 col-12">- NOTE: There's no need to use the star (*) for each
+                                       each element because arrays are ALREADY call by
+                                       reference.</p>
+                <p class="px-0 col-12">- A.K.A., the square brackets [] reference each element,
+                                       so there's no need for the star (*).</p>
+              </div>
+          </div>
+      </div>
+    </div>
+   </div>
+  <div class="col-6 py-5 flex-grow-1 black-text text-center grey">
+    <!--
+    <img src="./assets/images/Pri_Photo.PNG" alt="Image of Priyanka Perumalraja" width="50%">
+    -->
+  </div>
+</div>
+</div>
+     </div>
+  </div>
+</div>
+</body>
+</html>
