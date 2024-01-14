@@ -114,6 +114,62 @@
 #contact-email-font-size{
   font-size: 110%;
 }
+#login{
+  border: 1px solid #B6BBC4;
+  outline: none;
+  transition: 0.5s;
+}
+#login:hover{
+  background:#343447;
+}
+#signup{
+  border: 1px solid #B6BBC4;
+  outline: none;
+  transition: 0.5s;
+}
+#signup:hover{
+  background:#343447;
+}
+fieldset input{
+  border: 2px solid #000;
+  border-radius: 8px;
+  outline: none;
+}
+form button{
+  border: 2px solid;
+  border-radius: 8px;
+  outline: none;
+}
+#login-form{
+  height: 30rem;
+}
+#login-box{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.remember-me input[type="checkbox"]{
+  margin-right: 5px;
+}
+
+/* Styles for the container */
+#container {
+  position: absolute;
+  border: 2px solid #ccc;
+  overflow: hidden; /* Ensure button stays within the container */
+}
+
+/*z-index Customization (put divs on top or behind, etc.)*/
+#z-1{
+  z-index: 1;
+}
+#z-2{
+  z-index: 2;
+}
+#z-3{
+  z-index: 3;
+}
 
 /*Alignment Customization*/
 .left-text-align{
@@ -123,7 +179,6 @@
   text-indent: 20px;
   white-space: pre-line;
 }
-
 div div ul {
   display: flex;
   flex-direction: column;
@@ -156,26 +211,19 @@ div div ul {
     margin: 0px;
     padding: 0px;
 }
-
 body{
     font-family: 'Exo', sans-serif;
 }
-
-
 .context {
     width: 100%;
     position: absolute;
     top:50vh;
-    
 }
-
 .context h1{
     text-align: center;
     color: #fff;
     font-size: 50px;
 }
-
-
 .area{
     background: #151532;  
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
@@ -184,7 +232,6 @@ body{
     margin: 0;
     padding: 0;
 }
-
 .center{
   margin-top: 5%;
   margin-bottom: 5%;
@@ -199,7 +246,6 @@ body{
     height: 65%;
     overflow: hidden;
 }
-
 .circles li{
     position: absolute;
     display: block;
@@ -211,15 +257,12 @@ body{
     bottom: -150px;
     
 }
-
 .circles li:nth-child(1){
     left: 25%;
     width: 80px;
     height: 80px;
     animation-delay: 0s;
 }
-
-
 .circles li:nth-child(2){
     left: 10%;
     width: 20px;
@@ -227,14 +270,12 @@ body{
     animation-delay: 2s;
     animation-duration: 12s;
 }
-
 .circles li:nth-child(3){
     left: 70%;
     width: 20px;
     height: 20px;
     animation-delay: 4s;
 }
-
 .circles li:nth-child(4){
     left: 40%;
     width: 60px;
@@ -242,28 +283,24 @@ body{
     animation-delay: 0s;
     animation-duration: 18s;
 }
-
 .circles li:nth-child(5){
     left: 65%;
     width: 20px;
     height: 20px;
     animation-delay: 0s;
 }
-
 .circles li:nth-child(6){
     left: 75%;
     width: 110px;
     height: 110px;
     animation-delay: 3s;
 }
-
 .circles li:nth-child(7){
     left: 35%;
     width: 150px;
     height: 150px;
     animation-delay: 7s;
 }
-
 .circles li:nth-child(8){
     left: 50%;
     width: 25px;
@@ -271,7 +308,6 @@ body{
     animation-delay: 15s;
     animation-duration: 45s;
 }
-
 .circles li:nth-child(9){
     left: 20%;
     width: 15px;
@@ -279,7 +315,6 @@ body{
     animation-delay: 2s;
     animation-duration: 35s;
 }
-
 .circles li:nth-child(10){
     left: 85%;
     width: 150px;
@@ -287,25 +322,21 @@ body{
     animation-delay: 0s;
     animation-duration: 11s;
 }
-
+/*Circles Animation*/
 @keyframes animate {
-
     0%{
         transform: translateY(0) rotate(0deg);
         opacity: 1;
         border-radius: 0;
     }
-
     100%{
         transform: translateY(-1000px) rotate(720deg);
         opacity: 0;
         border-radius: 50%;
     }
-
 }
 
 /*Triangles*/
-
 .triangle {
   width: 0;
   height: 0;
@@ -313,7 +344,6 @@ body{
   border-right: 50px solid transparent;
   border-bottom: 100px solid #B6BBC435; /* Change color as needed */
 }
-
 .tri-container {
   float: right;
   margin-top: 50px;
@@ -323,15 +353,16 @@ body{
 /*Arrow Bullet Point*/
 .arrow-bullet {
   list-style: none;
-  padding-left: 20px; /* Adjust this value based on your preference */
+  padding-left: 20px; 
 }
 .arrow-bullet:before {
-  content: "➤"; /* You can replace this with any arrow or character you prefer */
-  color: #000; /* Customize the color of the arrow */
+  content: "➤"; 
+  color: #000; 
   display: inline-block;
-  width: 1.5em; /* Adjust the width of the arrow */
-  margin-left: -1em; /* Adjust the space between the bullet and the text */
+  width: 1.5em; 
+  margin-left: -1em; 
 }
+/*Circle Bullet Point*/
 .circle-bullet {
   list-style: none;
   padding-left: 20px;
@@ -344,21 +375,13 @@ body{
   margin-left: -1em;
 }
 
-/* Styles for the container */
-#container {
-  position: absolute;
-  border: 2px solid #ccc;
-  overflow: hidden; /* Ensure button stays within the container */
-}
-
 /* Styles for the button */
 .movebutton {
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 50px; /* Initial top position */
-  left: 50px; /* Initial left position */
-  transition: top 0.2s ease; /* Adding transition for smooth movement */
+  top: 50px; 
+  left: 50px; 
+  transition: top 0.2s ease; 
 }
-
 
