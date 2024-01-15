@@ -4,92 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pri-Programming</title>
+    <!--Boostrap Styling-->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+    crossorigin="anonymous" />
+    <!--Other Styling-->
     <link rel="stylesheet" href="style.css" />
+    <!--jQuery Link-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <!-- Hotjar Tracking Code for my site -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:3776525,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:3776525,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
   </head>
   <body>
-    <!-- Header -->
-    <div class="container py-1">
-      <header class="d-flex flex-wrap align-items-center justify-content-center
-                       justify-content-md-between py-3 mb-0">
-          <div class="col-md-3 mb-2 mb-md-0">
-            <a href="index.html" class="d-inline-flex link-body-emphasis
-                                              text-decoration-none">
-              <img src="assets/images/Pri-Programming Images/PPLogo4.png"
-                   alt="Pri-Programming Logo" width="90%"/>
-            </a>
-          </div>
-
-          <!--Main Menu Items-->
-          <ul class="nav col-12 col-md-auto mb-2 justify-content-center
-                     mb-md-0">
-            <li>
-              <a href="index.html" 
-                 class="cc nav-link px-2 link-secondary">
-                 Home
-              </a>
-            </li>
-            <li>
-              <a href="about.html" 
-                 class="cc nav-link px-2 black-text">
-                 About
-              </a>
-            </li>
-            <li>
-              <a href="courses.html" 
-                 class="cc nav-link px-2 black-text">
-                 Courses
-              </a>
-            </li>
-            <li>
-              <a href="games.html" 
-                 class="cc nav-link px-2 black-text">
-                 Games
-              </a>
-            </li>
-            <li>
-              <a href="blog.html" 
-                 class="cc nav-link px-2 black-text">
-                 Blog
-              </a>
-            </li>
-          </ul>
-  
-          <div class="col-md-3 text-end">
-            <!-- <button type="button" class="btn btn-outline-primary me-2
-              black-text grey-border cc"
-            >
-              Login </button> <button type="button" class="btn btn-primary
-            black-text grey-border grey-background cc"
-            >
-              Sign-up </button> -->
-          </div>
-      </header>
-    </div>
-    <hr id="hr-line"/>
+    <!--HEADER DIV (jQuery Linked)-->
+    <div id="header-container"></div>
 
     <!--Main Jumbotron-->
-    <div>
+    <div class="content">
       <div class="area">
-        <div
-          class="container py-5 text-center navy-background h-100 d-flex flex-column"
-        >
+        <div class="container py-5 text-center navy-background h-100 d-flex
+        flex-column">
           <div class="row flex-grow-1 align-items-center">
             <div class="col-12 py-5 flex-grow-1 white-text">
               <h1 class="cc three-rem">Make Programming Easy.</h1>
@@ -99,6 +44,7 @@
               </p>
             </div>
           </div>
+          <!--Floating Cubes-->
           <ul class="circles">
             <li></li>
             <li></li>
@@ -115,57 +61,46 @@
       </div>
     </div>
 
-    <!--About Edited-->
-    <div class="grey-area grey-background text-center">
-      <div class="container py-5 h-100 d-flex flex-column">
-        <div class="row flex-grow-1 align-items-center">
-          <div class="col-12 py-5 flex-grow-1 black-text">
-            <h2 class="display-5 fw-bold text-body-emphasis cc">Who are we?</h2>
-            <p class="lead mb-5 cc"></p>
-                <a href="./about.html">
-                  <button
-                    type="button"
-                    class="cc btn btn-primary btn-lg px-4 gap-3 black-border grey-background black-text">
-                    About
-                  </button>
-                </a>
+    <!--Main About Jumbotron-->
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="./assets/images/Pri-Programming Images/PPLogo4Dog.png"
+            class="d-block mx-lg-auto img-fluid"
+            alt="Bootstrap Themes"
+            width="400"
+            height="400"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 cc">
+            Our Goal.
+          </h1>
+          <p class="lead cc">
+            Our goal as an organization is working towards providing educational
+            and technological resources for the purpose of learning Computer
+            Science and technology skills to students and communities who need
+            them.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start cc">
+            <!-- <button
+              type="button"
+              class="btn btn-primary btn-lg px-4 me-md-2 grey-background grey-border black-text"
+            >
+              Primary
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary btn-lg px-4 cc"
+            >
+              Default
+            </button> -->
           </div>
         </div>
       </div>
     </div>
-
-
-    <!--Old About-->
-    <!-- <div class="px-4 py-5 text-center grey-background height60vph"> -->
-      <!-- <img
-        class="d-block mx-auto mb-4"
-        src="/docs/5.3/assets/brand/bootstrap-logo.svg"
-        alt=""
-        width="72"
-        height="57"
-      /> -->
-      <!--<div class="center py-0">
-        <h1 class="cc display-5 fw-bold text-body-emphasis">Who are we?</h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="cc lead mb-4">Learn more about what we do.</p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">-->
-            <!--<a href="./about.html">
-              <button
-                type="button"
-                class="cc btn btn-primary btn-lg px-4 gap-3 black-border grey-background black-text">
-                About
-              </button>
-            </a>-->
-       <!-- <button
-            type="button"
-            class="btn btn-outline-secondary btn-lg px-4 cc"
-            >
-              Secondary
-            </button> -->
-         <!-- </div>
-        </div>
-      </div>
-    </div> -->
 
     <!--Contact Info Footer-->
     <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
@@ -177,10 +112,22 @@
         <a href="#">Back to top</a>
       </p>
     </footer>
+
+    <!--
+    <script src="global.js"></script>
+    -->
+
+  <!--Scripts-->
     <script
       src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <!--jQuery Script to Header-->
+    <script>
+      $(function() {
+        $('#header-container').load('headerLvl1.html');
+      });
+    </script>
   </body>
 </html>

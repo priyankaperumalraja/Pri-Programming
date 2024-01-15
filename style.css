@@ -153,6 +153,30 @@ form button{
   margin-right: 5px;
 }
 
+/*Styles for sticky header*/
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-left: 42.7778px;
+  margin-right: 42.7778px;
+}
+/*
+.content{
+  padding: 16px;
+}
+*/
+.sticky + .content{
+  padding-top: 102px;
+}
+
+/* Override Bootstrap styles for .nav class. 
+   Orients menu items horizontally */
+#main-menu-items {
+  flex-direction: row !important;
+  flex-wrap: wrap;
+}
+
 /* Styles for the container */
 #container {
   position: absolute;
