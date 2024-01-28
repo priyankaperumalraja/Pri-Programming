@@ -29,9 +29,8 @@
   <body>
     <!--HEADER DIV (jQuery Linked)-->
     <div id="header-container"></div>
-
     <!--Main Jumbotron-->
-    <div class="content">
+    <div class="header-filler-padding">
       <div class="area">
         <div class="container py-5 text-center navy-background h-100 d-flex
         flex-column">
@@ -85,6 +84,7 @@
             them.
           </p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start cc">
+            
             <!-- <button
               type="button"
               class="btn btn-primary btn-lg px-4 me-md-2 grey-background grey-border black-text"
@@ -129,5 +129,20 @@
         $('#header-container').load('headerLvl1.html');
       });
     </script>
+    <!--Google Translate Script-->
+    	<script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'google_translate_element'
+          );
+        }
+      </script>
+    
+      <script type="text/javascript"
+          src=
+    "https://translate.google.com/translate_a/element.js?
+    cb=googleTranslateElementInit">
+      </script>
   </body>
 </html>

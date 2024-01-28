@@ -42,6 +42,9 @@
 
 
 /* Background Customization */
+.white-background{
+  background-color: white;
+}
 .grey-background{
   background-color: #6d686820;
 }
@@ -104,6 +107,14 @@
 .w-4{
   width: 40%;
 }
+.w-10{
+  width: 100%;
+}
+
+/* Underline Customization*/
+.underline{
+  text-decoration: underline;
+}
 
 /* Item Specific Customization */
 #hr-line{
@@ -152,36 +163,62 @@ form button{
 .remember-me input[type="checkbox"]{
   margin-right: 5px;
 }
+/*Abacus Styling*/
+.beadContainer {
+  position: relative;
+  width: 500px;
+  height: 333.33px;
+  border: 2px solid #ccc;
+  overflow: hidden;
+  text-align: center;
+}
+.bead {
+  width: 25px;
+  height: 25px;
+  background-color: #d33215;
+  position: relative;
+  cursor: grab;
+  user-select: none;
+  border-radius: 40%;
+}
+.beadCol{
+  margin: 3px;
+  height: 200px;
+  position: relative;
+  border: 2px solid #ccc;
+  overflow: hidden;
+  text-align: center;
+}
+
 
 /*Styles for sticky header*/
-.sticky{
+.header{
   position: fixed;
-  top: 0;
   width: 100%;
-  margin-left: 42.7778px;
-  margin-right: 42.7778px;
+  background-color: white;
+  border-style: none none solid none;
+  border-width: 2px;
+  border-color:rgba(65, 61, 61, 0.2);
 }
-/*
-.content{
-  padding: 16px;
+.fixed{
+  position: fixed;
 }
-*/
-.sticky + .content{
+#filler{
+  height: 110px;
+}
+.header-filler-padding{
+  padding-top: 110px;
+}
+
+/* .sticky + .content{
   padding-top: 102px;
-}
+} */
 
 /* Override Bootstrap styles for .nav class. 
    Orients menu items horizontally */
 #main-menu-items {
   flex-direction: row !important;
   flex-wrap: wrap;
-}
-
-/* Styles for the container */
-#container {
-  position: absolute;
-  border: 2px solid #ccc;
-  overflow: hidden; /* Ensure button stays within the container */
 }
 
 /*z-index Customization (put divs on top or behind, etc.)*/
