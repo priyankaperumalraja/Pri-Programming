@@ -95,9 +95,64 @@
         </p>
         <p class="lead mb-5">
           This formatting called <span class="fw-bold">syntax</span> makes
-          writing code for the programmer and understanding the code for the computer
-          so much easier.
+          writing code for the programmer and understanding the code for the
+          computer so much easier.
         </p>
+        <p class="lead mb-5">
+          Well, if we can understand instructions or code written in a
+          programming language and a computer can understand it in binary code,
+          how can we send code that the computer will understand? That's where
+          <span class="fw-bold">compilers</span> come in. 
+        </p>
+        <p class="lead mb-5">
+          <span class="fw-bold">Compilers</span> are software that
+          <span class="underline">translate</span> programming language code
+          written by programmers into <span class="fw-bold">machine code</span>
+          that the computer can understand.
+        </p>
+        <div class="grey-background p-4 mb-5">
+          <div class="container d-flex example">
+            <div class="col-2 example-margin">
+              <div class="example-background">
+                <p class="lead fw-bold">EXAMPLE</p>
+              </div>
+            </div>
+            <div class="col-10">
+              <p>File contents of a file called "<span
+                class="fw-bold">number.cpp</span>" with code written in the C++
+                programming language:</p>
+            </div>
+          </div>
+          <p><span class="fw-bold underline">SOURCE CODE:</span> int num = 8;</p>
+          <p></p>
+          <p class="fw-bold underline">MACHINE CODE:</p>
+          <p class="">
+            ELF          >                    X          @     @     GCC: (GNU)
+            13.2.1 20231205 (Red Hat 13.2.1-6)                GNU  À            À                                     
+            ñÿ                
+                              test.cpp num  .symtab .strtab .shstrtab .text .data
+            .bss .comment .note.GNU-stack .note.gnu.property                                                                         
+            @                                      !                     @                      
+            '                     D                                      ,      0
+            D       /                             5                      s                       
+            E                      x       0                                  ¨ H                           	   
+            ð                                         þ       X                              
+          </p>
+        </div>
+        <p class="lead mb-5">Machine code files, typically having the "<span
+        class="fw-bold">.o</span>" file ending, are much larger than source code
+        files, typically having a file ending like "<span
+        class="fw-bold">.c</span>", "<span class="fw-bold">.py</span>", etc. (in
+        this case, the C++ file has the "<span class="fw-bold">.cpp</span>"
+        ending.</p>
+        <p class="lead mb-5">
+          <span class="fw-bold">Linkers</span> are software that
+          translate <span class="underline">machine code</span> into <span class="underline">binary code</span> instructions that the computer
+          understands and can execute via its <span class="fw-bold">Central
+          Processing Unit (CPU)</span>.
+        </p>
+
+
         <!--Pointers & References Chart-->
         <!--<div class="container">-->
           <!--Title Row-->
