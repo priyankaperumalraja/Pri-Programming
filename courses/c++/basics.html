@@ -32,7 +32,7 @@
   <div id="header-container"></div>
 
       <!--Title Bar-->
-      <div class="cc mt-5">
+      <div class="cc header-filler-padding">
         <div class="p-5 grey-background "> <!--Took this out:
         (bg-body-tertiary)-->
           <div class="container py-5 black-text">
@@ -65,9 +65,9 @@
           the history of computers will help any Computer Science student succeed. 
         </p>
         <!--The Abacus-->
-        <h3 class="cc display-6 fw-bold text-body-emphasis">
-          The Abacus.</h3>
-        <div class="row">
+        <div class="row mb-5">
+          <h3 class="cc display-6 fw-bold text-body-emphasis">
+            The Abacus.</h3>
             <div class="column col-6 center">
                 <p class="cc lead mb-5">
                     The first ever recorded computer was the abacus in the 2000's BCE. 
@@ -86,31 +86,43 @@
                    Abacus_%28PSF%29.png/330px-Abacus_%28PSF%29.png
                 </p>
             </div>
+            <p class="cc lead mb-5">The abacus is typically made of a wood frame and
+              rows of beads representing number places such as the ones, tens,
+              hundreds places, and so on. Through the middle of the main frame is a
+              wooden bar, typically with two beads on each row above representing the
+              number 5, as well as five beads on each row below each representing the
+              number 1. 
+              </p>
+              <p class="cc lead mb-5">Ancient people were able to use the abacus’
+              system of place organization to keep track of very large numbers and
+              conduct mathematical operations like addition, subtraction,
+              multiplication, and division. 
+              </p>
+              <p class="cc lead mb-5">Addition was typically represented by moving
+              beads away from the edges of the abacus to the center, while subtraction
+              is moving beads away from the center. Multiplication and division
+              involved multiple iterations of this process.
+              </p>
+              <p class="cc lead mb-5">The abacus was used for millenia, and only until
+              the 19th century CE did new ideas for computation emerge. 
+              </p>
+              <p class="gmnd mt-2 px-5">Britannica, T. Editors of Encyclopaedia (2023,
+              December 8). abacus. Encyclopedia Britannica.
+              https://www.britannica.com/technology/abacus-calculating-device</p>
         </div>
-        <p class="cc lead mb-5">The abacus is typically made of a wood frame and
-        rows of beads representing number places such as the ones, tens,
-        hundreds places, and so on. Through the middle of the main frame is a
-        wooden bar, typically with two beads on each row above representing the
-        number 5, as well as five beads on each row below each representing the
-        number 1. 
-        </p>
-        <p class="cc lead mb-5">Ancient people were able to use the abacus’
-        system of place organization to keep track of very large numbers and
-        conduct mathematical operations like addition, subtraction,
-        multiplication, and division. 
-        </p>
-        <p class="cc lead mb-5">Addition was typically represented by moving
-        beads away from the edges of the abacus to the center, while subtraction
-        is moving beads away from the center. Multiplication and division
-        involved multiple iterations of this process.
-        </p>
-        <p class="cc lead mb-5">The abacus was used for millenia, and only until
-        the 19th century CE did new ideas for computation emerge. 
-        </p>
-        <p class="gmnd mt-2 px-5">Britannica, T. Editors of Encyclopaedia (2023,
-        December 8). abacus. Encyclopedia Britannica.
-        https://www.britannica.com/technology/abacus-calculating-device</p>
-        
+
+        <!--The Difference Engine-->
+        <div class="row mb-5">
+          <h3 class="cc display-6 fw-bold text-body-emphasis">
+            The Difference Engine.
+          </h3>
+        </div>
+        <!--The Analytical Engine-->
+        <div class="row mb-5">
+          <h3 class="cc display-6 fw-bold text-body-emphasis">
+            The Analytical Engine.
+          </h3>
+        </div>
       </div>
       <div class="col-6 py-5 flex-grow-1 black-text text-center grey">
         <!--
@@ -123,17 +135,129 @@
 </div>
 
 <!--Bead.-->
-<!--
 <div class="row">
-  <div class="col-3">
+  <div class="col-1">
   </div>
-  <div id="container" class="mx-5 my-5 b-2 black-border col-6" style="height: 200px">
-    <button id="slideButton" class="movebutton">Bead</button>
+  <div class="beadContainer m-5 b-2 black-border col-10">
+    <div class="row">
+      <div class="beadCol1-1 beadCol col-1">
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+      </div>
+      <div class="beadCol1-2 beadCol col-1">
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+      </div>
+      <div class="beadCol1-3 beadCol col-1">
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+      </div>
+      <div class="beadCol1-4 beadCol col-1">
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+      </div>
+      <div class="beadCol1-5 beadCol col-1">
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+      </div>
+      <div class="beadCol1-6 beadCol col-1">
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+      </div>
+      <div class="beadCol1-7 beadCol col-1">
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+      </div>
+      <div class="beadCol1-8 beadCol col-1">
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+      </div>
+      <div class="beadCol1-9 beadCol col-1">
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+      </div>
+      <div class="beadCol1-10 beadCol col-1">
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="beadCol2-1 beadCol col-1">
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+      </div>
+      <div class="beadCol2-2 beadCol col-1">
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+      </div>
+      <div class="beadCol2-3 beadCol col-1">
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+      </div>
+      <div class="beadCol2-4 beadCol col-1">
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+      </div>
+      <div class="beadCol2-5 beadCol col-1">
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+      </div>
+      <div class="beadCol2-6 beadCol col-1">
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+      </div>
+      <div class="beadCol2-7 beadCol col-1">
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+      </div>
+      <div class="beadCol2-8 beadCol col-1">
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+      </div>
+      <div class="beadCol2-9 beadCol col-1">
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+      </div>
+      <div class="beadCol2-10 beadCol col-1">
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+        <button class="bead" draggable="true"></button>
+      </div>
+    </div>
   </div>
-  <div class="col-3">
+  <div class="col-1">
   </div>
 </div>
--->
 
 <!--Scripts-->
 <script
@@ -148,7 +272,7 @@ $(function() {
 });
 </script>
 <!--Interactive Abacus Script-->
-<script src="script.js"></script>
+<script src="basics.js"></script>
 
 </body>
 </html>
