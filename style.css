@@ -163,6 +163,14 @@ form button{
 .remember-me input[type="checkbox"]{
   margin-right: 5px;
 }
+/*Blog Author Icon Styling*/
+p span img{
+  width: 50px;
+  border-radius: 50px;
+  margin-left: 8px;
+  margin-right: 5px;
+}
+
 /*Abacus Styling*/
 .beadContainer {
   position: relative;
@@ -189,7 +197,12 @@ form button{
   overflow: hidden;
   text-align: center;
 }
-
+div div h2 + p{  /*Styling for "When starting our as a coder..." basicsOfC++.html*/
+  font-size: 125%;
+}
+.italic{ /*Italics for "daunting and discouraging" basicsOfC++.html*/
+  font-style: italic;
+}
 
 /*Styles for sticky header*/
 .header{
@@ -199,6 +212,7 @@ form button{
   border-style: none none solid none;
   border-width: 2px;
   border-color:rgba(65, 61, 61, 0.2);
+  z-index: 2;
 }
 .fixed{
   position: fixed;
@@ -239,6 +253,9 @@ form button{
 .indented-paragraph{
   text-indent: 20px;
   white-space: pre-line;
+}
+.blog-post{
+  margin-top: -20px;
 }
 div div ul {
   display: flex;
@@ -299,13 +316,15 @@ body{
 }
 
 /*Circles*/
+
 .circles{
-    position: absolute;
+    position:absolute;
     top: 90px;
     left: 0;
     width: 100%;
     height: 65%;
     overflow: hidden;
+    z-index: 1;
 }
 .circles li{
     position: absolute;
@@ -383,6 +402,7 @@ body{
     animation-delay: 0s;
     animation-duration: 11s;
 }
+
 /*Circles Animation*/
 @keyframes animate {
     0%{
